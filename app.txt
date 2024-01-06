@@ -1,1 +1,8 @@
-init app
+function main(){
+    로그인(1234, 1234)
+}
+function 로그인(아이디, 비밀번호){
+    로그인을시도하는유저 = getUser(아이디)
+    if(로그인을시도하는유저.getPW()==비밀번호) return true
+    else return false
+}

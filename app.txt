@@ -6,3 +6,10 @@ function 로그인(아이디, 비밀번호){
     if(로그인을시도하는유저.getPW()==비밀번호) return true
     else return false
 }
+function 회원가입(유저){
+    if(데이터베이스.has(유저.getID())){
+        데이터베이스.add(유저)
+        return true
+    }
+    else return false
+}

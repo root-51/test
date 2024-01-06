@@ -13,3 +13,10 @@ function 회원가입(유저){
     }
     else return false
 }
+function 회원삭제(아이디){
+    if(데이터베이스.has(아이디)){
+        데이터베이스.delete(아이디)
+        return true
+    }
+    else return false
+}
